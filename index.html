@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Sallam - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/me.jpeg" alt="Mahmoud Sallam" width="80" >
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mahmoud Sallam">Mahmoud Sallam</h1>
+
+          <p class="title">Mobile Developer (Android - IOS)</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ma.sallam96@gmail.com" class="contact-link">ma.sallam96@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Wroclaw, Poland</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/mahmodsallam" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mahmodsallam/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Senior Software Engineer at EPAM Systems, specializing in building and maintaining high-impact Android applications used by millions of users worldwide. My work spans diverse and complex domains, including Bluetooth Low Energy, Android Open Source, Android Auto, and Autosar solutions. With deep expertise in Kotlin, MVVM, Dagger-Hilt, Coroutines, Clean Architecture, and robust unit testing, I focus on delivering scalable, efficient, and user-centric mobile experiences.
+          </p>
+          <br>
+
+          <p>
+            Throughout my career, I have demonstrated a strong ability to adopt cutting-edge technologies and implement best practices to ensure high-quality code and optimal app performance. My contributions have driven significant user engagement and satisfaction, even while addressing challenging technical requirements. By maintaining a keen focus on quality and innovation, I have consistently enhanced app functionality and user experience.
+          </p>
+
+          <br>
+
+          <p>
+            I hold a Bachelor’s degree in Computer Science from Assiut University, along with two Nanodegrees in Android Development from Udacity, reflecting my commitment to continuous learning and technical excellence. Passionate about mobile development, I thrive in collaborative environments where innovation and attention to detail are valued. My goal is to create solutions that not only meet but exceed user expectations and business goals.
+          </p>
+
+          <br>
+
+          <p>
+            Feel free to connect with me through my email at <b>ma.sallam96@gmail.com</b> or my professional network profiles. I'm always interested in discussing new technologies and opportunities for collaboration.
+          </p>
+        </section>
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <!--EPAM-->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Software Engineer (Android-IOS)
+                  <span>📍 Wroclaw, Poland</span>
+              </h4>
+              <h4 class="h4 timeline-item-title"> EPAM Systems 
+                <span>🗓️  Feb 2022 - present</span> 
+              </h4>
+              <br>
+              <div class="timeline-text">
+                <ul>
+                  <li> Applied the proguard to prevent source code from being reverse engineered.</li>
+                  <li> Build a new architecture using the latest android tech stack (MVVM, Jetpack compose).</li>
+                  <li> Migrated 5 Cordova modules in the project to kotlin-Android code.</li>
+                  <li>Migrated Android legacy code to the modular Android architecture.</li>
+                  <li> Managed 8 Releases & 2 Hotfix Releases in 2 years and migrated several screens from MVP to MVVM .</li>
+                  <li> Led retrospectives for the quarter survey, conducted 4 coding interviews, co-hosted monthly department updates.</li>
+                  <li> Led successful release of Projects, introduced & drove initiatives of new features. Also,reduced app crashes by 90%, and enhanced image loading and scrolling performance.</li>
+                </ul>
+               
+              </div>
+            </li>
+            <!--Union coop-->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior Software Engineer (Android)
+                  <span>📍 Cairo, Egypt</span>
+              </h4>
+              <h4 class="h4 timeline-item-title"> Union Coop 
+                <span>🗓️  Dec 2020 - Feb 2022</span> 
+              </h4>
+              <br>
+              <div class="timeline-text">
+                <ul>
+                  <li> Improved App stability to 99% UnionCoop.</li>
+                  <li> Reduces legacy code in ADC project by approximately 8% in addition to having implemented the feature of extending parking tickets.</li>
+                  <li> Did regulatory changes for ADC app & supported the customer representative in buildin the App to release the changes.</li>
+                  <li> Introduced Rootberry to prevent applications from working on rooted devices, which saves user privacy.</li>
+                  <li> Developed resource overriding solution as a part of AOSP.</li>
+                  <li> Developed feature to connect to android device inside the android o.s using BLE.</li>
+                  <li>Fully Developed App used by POS Android devices using kotlin.</li>
+                </ul>
+               
+              </div>
+            </li>
+
+            <!--Ihorizons-->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer (Android)
+                  <span>📍 Cairo, Egypt</span>
+              </h4>
+              <h4 class="h4 timeline-item-title"> IHorizons 
+                <span>🗓️  Oct 2018 - Dec 2020</span> 
+              </h4>
+              <br>
+              <div class="timeline-text">
+                <ul>
+                  <li> Developed the OTP one-time Password to simplify the Process of Login, increased users satisfaction by 37%.</li>
+                  <li> Built Quizz Feature to allow users solve questions and gain points, increased the number of users using the app by 12%.</li>
+                  <li> Developed Push notification to promote buying bundles for voice and internet.</li>
+                  <li> Fully Developed Robost App from scratch using Kotlin, Coroutines, Dagger-Hilt and clean Architecture.</li>
+                  <li> Built new custom notification to keep users more focused, increased the success rate of receiving notification by 99%.</li>
+                  <li> Led successful release of Projects, introduced & drove initiatives of new features. Also,reduced app crashes by 90%, and enhanced image loading and scrolling performance.</li>
+                  <li> Integrated PayFort as a payment gateway in Core Project and Improved app stability by reducing crashes by 30%.</li>
+                </ul>
+               
+              </div>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header> 
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!--Expedia-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=com.expedia.bookings&hl=en" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/expedia.png" alt="Expedia" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Expedia</h3>
+
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Careem-->
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://play.google.com/store/apps/details?id=com.careem.acma&hl=en" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/careem.png" alt="Careem" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Careem</h3>
+
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!-- ubs-->
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://play.google.com/store/apps/dev?id=7056037792991834747&hl=en" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ubs.jpg" alt="UBS" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">UBS</h3>
+                <p class="project-category"><!--small description here--></p>
+              </a>
+            </li>
+
+            <!--Hotels.com-->
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://play.google.com/store/apps/details?id=com.hcom.android&hl=en" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/hotels.webp" alt="Hotels" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hcom</h3>
+
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Verbo-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=com.vrbo.android&hl=en" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/verbo.png" alt="Verbo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Verbo</h3>
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Oredoo algeria-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=com.algeria.selfcare.app.android&hl=en" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ooredoo-algeria.png" alt="qatarairways" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ooredoo Algeria</h3>
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Qatar airways-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=com.m.qr&hl=en" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/qatarairways.webp" alt="qatarairways" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Qatar airways</h3>
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Union coop-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=com.unioncoop.ucs&hl=en" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/unioncoop.png" alt="qatarairways" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Union Coop</h3>
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Robost-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=com.app.tayar&hl=en" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/robost.jpg" alt="Robost" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Robost</h3>
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+            <!--Oredoo Qatar-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://play.google.com/store/apps/details?id=qa.ooredoo.android&hl=en" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ooredoo-qatar.jpg" alt="qatarairways" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ooredoo Qatar</h3>
+                <p class="project-category"><!--small description here--></p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
